@@ -4,8 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Hi! My name is Vrinda Chauhan and I'm a recent graduate from UCSD, where I studied mathematics, statistics, and data science. I have a deep interest in machine learning and deep learning, specifically in context of signal processing. My projects display some of my academic, professional, and personal projects, and I'm interested in applying my knowledge to real world data to make predictions and develop my work as a data scientist. I'm open to collaboration on Kaggle competitions, projects, and hackathons, and I'd be happy to discuss my work in more detail. Please feel free to reach out to me or connect with me on LinkedIn. **[fastpages](https://www.linkedin.com/in/vrindachaa/)** [^1].
 
 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+[^1]:a portfolio & blog about some of my programming and data science projects.
