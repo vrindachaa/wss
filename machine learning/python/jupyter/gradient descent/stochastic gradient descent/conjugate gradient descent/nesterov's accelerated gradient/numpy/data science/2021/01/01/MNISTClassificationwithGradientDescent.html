@@ -10,14 +10,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="A tutorial going over the mathematical underpinnings of gradient descent and its variants in classification problems. We will use mathematical concepts and probability theory to contruct a solution to this problem from scratch." />
 <meta property="og:description" content="A tutorial going over the mathematical underpinnings of gradient descent and its variants in classification problems. We will use mathematical concepts and probability theory to contruct a solution to this problem from scratch." />
-<link rel="canonical" href="https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/random%20forest/decision%20tree/xgboost/lgbm/extratrees/knn/scikit-learn/pandas/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html" />
-<meta property="og:url" content="https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/random%20forest/decision%20tree/xgboost/lgbm/extratrees/knn/scikit-learn/pandas/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html" />
+<link rel="canonical" href="https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/gradient%20descent/stochastic%20gradient%20descent/conjugate%20gradient%20descent/nesterov's%20accelerated%20gradient/numpy/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html" />
+<meta property="og:url" content="https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/gradient%20descent/stochastic%20gradient%20descent/conjugate%20gradient%20descent/nesterov's%20accelerated%20gradient/numpy/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html" />
 <meta property="og:site_name" content="Portfolio Projects &amp; Insights" />
 <meta property="og:image" content="https://vrindachaa.github.io/wss/images/mnist.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-01T00:00:00-06:00" />
 <script type="application/ld+json">
-{"datePublished":"2021-01-01T00:00:00-06:00","url":"https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/random%20forest/decision%20tree/xgboost/lgbm/extratrees/knn/scikit-learn/pandas/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html","@type":"BlogPosting","image":"https://vrindachaa.github.io/wss/images/mnist.png","headline":"MNIST Classification with Gradient Descent and its variants","dateModified":"2021-01-01T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/random%20forest/decision%20tree/xgboost/lgbm/extratrees/knn/scikit-learn/pandas/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html"},"description":"A tutorial going over the mathematical underpinnings of gradient descent and its variants in classification problems. We will use mathematical concepts and probability theory to contruct a solution to this problem from scratch.","@context":"https://schema.org"}</script>
+{"description":"A tutorial going over the mathematical underpinnings of gradient descent and its variants in classification problems. We will use mathematical concepts and probability theory to contruct a solution to this problem from scratch.","url":"https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/gradient%20descent/stochastic%20gradient%20descent/conjugate%20gradient%20descent/nesterov's%20accelerated%20gradient/numpy/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html","@type":"BlogPosting","headline":"MNIST Classification with Gradient Descent and its variants","dateModified":"2021-01-01T00:00:00-06:00","datePublished":"2021-01-01T00:00:00-06:00","image":"https://vrindachaa.github.io/wss/images/mnist.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/gradient%20descent/stochastic%20gradient%20descent/conjugate%20gradient%20descent/nesterov's%20accelerated%20gradient/numpy/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/wss/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vrindachaa.github.io/wss/feed.xml" title="Portfolio Projects &amp; Insights" /><link rel="shortcut icon" type="image/x-icon" href="/wss/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -110,28 +110,19 @@ window.onload = wrap_img;
         <a class="category-tags-link" href="/wss/categories/#jupyter">jupyter</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/wss/categories/#random forest">random forest</a>
+        <a class="category-tags-link" href="/wss/categories/#gradient descent">gradient descent</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/wss/categories/#decision tree">decision tree</a>
+        <a class="category-tags-link" href="/wss/categories/#stochastic gradient descent">stochastic gradient descent</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/wss/categories/#XGBoost">XGBoost</a>
+        <a class="category-tags-link" href="/wss/categories/#conjugate gradient descent">conjugate gradient descent</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/wss/categories/#LGBM">LGBM</a>
+        <a class="category-tags-link" href="/wss/categories/#Nesterov's accelerated gradient">Nesterov's accelerated gradient</a>
         &nbsp;
       
-        <a class="category-tags-link" href="/wss/categories/#ExtraTrees">ExtraTrees</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/wss/categories/#KNN">KNN</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/wss/categories/#scikit-learn">scikit-learn</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/wss/categories/#pandas">pandas</a>
+        <a class="category-tags-link" href="/wss/categories/#numpy">numpy</a>
         &nbsp;
       
         <a class="category-tags-link" href="/wss/categories/#data science">data science</a>
@@ -28295,7 +28286,7 @@ The accuracy rate for the test data is:  0.92
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/wss/machine%20learning/python/jupyter/random%20forest/decision%20tree/xgboost/lgbm/extratrees/knn/scikit-learn/pandas/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html" hidden></a>
+</script><a class="u-url" href="/wss/machine%20learning/python/jupyter/gradient%20descent/stochastic%20gradient%20descent/conjugate%20gradient%20descent/nesterov's%20accelerated%20gradient/numpy/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">

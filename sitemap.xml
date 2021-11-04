@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://vrindachaa.github.io/wss/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/random%20forest/decision%20tree/xgboost/lgbm/extratrees/knn/scikit-learn/pandas/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html</loc>
+<loc>https://vrindachaa.github.io/wss/machine%20learning/python/jupyter/gradient%20descent/stochastic%20gradient%20descent/conjugate%20gradient%20descent/nesterov's%20accelerated%20gradient/numpy/data%20science/2021/01/01/MNISTClassificationwithGradientDescent.html</loc>
 <lastmod>2021-01-01T00:00:00-06:00</lastmod>
 </url>
 <url>
